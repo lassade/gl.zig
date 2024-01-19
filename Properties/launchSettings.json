@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "generator2": {
+      "commandName": "Project",
+      "commandLineArgs": "$(ProjectDir)\\OpenGL-Registry\\xml\\gl.xml"
+    }
+  }
+}
