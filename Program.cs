@@ -329,8 +329,7 @@ pub fn contains(lhs: CommandFlags, rhs: CommandFlags) bool {
                 var requires = new List<FeatureSetList>();
                 foreach (var otherFeat in registry.Features)
                 {
-                    if (otherFeat == feat ||
-                        otherFeat.EnumAPI == feat.EnumAPI ||
+                    if (otherFeat.EnumAPI == feat.EnumAPI &&
                         otherFeat.FloatNumber <= feat.FloatNumber)
                     {
                         requires.AddRange(otherFeat.Requires ?? emptyRequires);
